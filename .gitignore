@@ -1,0 +1,11 @@
+*.lib
+*.lef
+*.tch
+*.capTbl
+xcelium.d/
+cov_work/
+waves.shm/
+counter.inn/
+*.swp
+*.log*
+!tb/xrun_simulation.log
