@@ -23,11 +23,10 @@ A complete digital back-end flow on an 8-bit counter with asynchronous active-lo
 16. [Credits and license](#16-credits-and-license)
 
 ## 1. Flow overview
-```
   ![RTL to GDSII flow (Cadence)](images/00_flow_diagram.png)
 
   *Overall Cadence RTL-to-GDSII flow. Results from my runs are in the sections below.*
-```
+
 
 ## 2. Tools
 | Stage | Tool | Version |
