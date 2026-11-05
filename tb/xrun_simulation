@@ -1,0 +1,86 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Aug 29, 2026 at 11:08:09 IST
+xrun
+	counter.v
+	counter_test.v
+	-access +rwc
+	-coverage all
+	-gui
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		counter_test
+
+	Extracting FSMs for coverage:
+		worklib.counter
+		worklib.counter_test
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.counter:v <0x671e1627>
+			streams:   2, words:   733
+		worklib.counter_test:v <0x0b7d0392>
+			streams:   4, words:  1926
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		             Instances  Unique
+		Modules:             2       2
+		Registers:           3       3
+		Scalar wires:        2       -
+		Vectored wires:      1       -
+		Always blocks:       2       2
+		Initial blocks:      1       1
+		Pseudo assignments:  2       2
+	Writing initial simulation snapshot: worklib.counter_test:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation interrupted at 855602665 NS + 1
+xcelium> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  counter_test(counter_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_7d9ce774_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_7d9ce774_00000000.ucd
+
+Launching IMC...
+
+xcelium> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  counter_test(counter_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_7d9ce774_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_7d9ce774_00000000.ucd
+
+Launching IMC...
+
+xcelium> ^C
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  counter_test(counter_test)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_7d9ce774_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_7d9ce774_00000000.ucd
+TOOL:	xrun(64)	22.09-s003: Exiting on Aug 29, 2026 at 11:13:04 IST  (total: 00:04:55)
