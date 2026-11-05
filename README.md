@@ -24,8 +24,9 @@ A complete digital back-end flow on an 8-bit counter with asynchronous active-lo
 
 ## 1. Flow overview
 ```
-RTL -> Simulation -> Synthesis -> DFT (scan) -> ATPG -> Equivalence check
-    -> Floorplan -> Power plan -> Placement -> CTS -> Routing -> Signoff checks -> GDSII
+  ![RTL to GDSII flow (Cadence)](images/00_flow_diagram.png)
+
+  *Overall Cadence RTL-to-GDSII flow. Results from my runs are in the sections below.*
 ```
 
 ## 2. Tools
