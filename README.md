@@ -220,5 +220,5 @@ cd synthesis && genus -f genus_script.tcl && genus -f genus_dft_script.tcl
 # Place and route: use physical_design/run_pnr.tcl as the command reference in Innovus
 ```
 
-## 16. Credits and license
-Course database and PDK: Cadence Design Systems (RTL to GDSII course). Scripts and documentation in this repository are released under the [MIT License](LICENSE); the PDK and library files remain the property of their owners.
+## 16. Credits
+Completed as part of the Cadence RTL-to-GDSII course lab. The course material, PDK and lab manual belong to Cadence and are not included. All results and screenshots are from my own runs.
